@@ -1,0 +1,19 @@
+<!-- <u>
+    <li *ngFor="let gifs of resultados">
+        {{ gifs.title }}
+    </li>
+</u> -->
+<div class="row">
+    <div class="col-md-6 col-sm-12" *ngFor="let gifs of resultados">
+
+        <div class="card">
+            <img class="card-img-top" [src]="gifs.images.downsized_medium.url" alt="">
+            <div class="card-body">
+                <div class="card-text">
+                    {{ gifs.title }}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
